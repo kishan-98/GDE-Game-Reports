@@ -3,7 +3,7 @@
 ## Game Reports: Kishan Sangani: 201501053
 ### Team Member 2: Sriya Deepika : 20161186
 
-## Checkers
+## Chess
 
 ### Rule Change:
 
