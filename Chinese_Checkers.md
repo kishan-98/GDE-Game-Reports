@@ -12,6 +12,9 @@ We introduced a new rule for called _Parallel Destiny_.
 - The destination of each player is not the opponent's cell but the adjacent cell of their opponent(either both left or both right).
 - Other rules of game apply as it is.
 
+![Parallel Destiny](crossed_destiny.png)
+
+
 ### Type of rule change:
 
 The new rule is **foundational** rule.
