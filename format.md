@@ -1,7 +1,6 @@
 # Game Design and Engineering
 
 ## Game Reports: Kishan Sangani: 201501053
-<br />
 ### Team Member 2: Sriya Deepika : 20161186
 
 ## <Game Name>
