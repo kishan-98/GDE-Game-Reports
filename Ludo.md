@@ -4,42 +4,39 @@
 ## Game Reports: Kishan Sangani: 201501053
 ### Team Member 2: Sriya Deepika : 20161186
 
-## Checkers
+## Ludo
 
 ### Rule Change:
 
-We introduced a new rule for called _Quad-directional Word_.
+We introduced a new rule for called _Split the Move_.
 
-- The word can be interpreted unconvenctional direction like right to left and down to up apart from convenctional direction left to right and up to down.
-- The score is calculated independently for each direction.
+- The count throw of the dice can be splitted between at most two pieces.
+- Steps moved by one or sum of steps moves by both the pieces must be equal to the count of throw of dice.
 - Other rules of game apply as it is.
 
 ### Type of rule change:
 
-The new rule is **foundational** rule.
+The new rule is **operational** rule.
 
 ### Reason for this change of rule
 
-- Palindromes are words which read same in either direction.
-- Although there are very less palindromes, they are not given the proper significance over the other words. This rule gives proper significance to the palindromic words.
-- Apart from palindromes, if the word is formed from right to left in the original game, it was not given any reward. This rule even takes care for that scenerio.
+- Towards the end of the game, the turns of the player are wasted as player might not get the exact move to win. To help with this, the rule was introduces.
+- Splitting the dice throw helps, and restriction over the total steps and the number of pieces in distribution restricts the player from exploiting the rule.
 
 ### Game Play
-- This change in rule make the game more interesting as there are bonus points for the palindromes and the words interpreted in the reverse direction.
-- Although the formation of words depends on the alphabetic letter picked by player randomly, still there is probability that player can build the word in unconvenctional direction as well.
+- The game play turned out to be interesting as with the _Split the Move_ rule, most utilization of steps of pieces occurs in terms of reaching the home, capturing opponent's piece or using the shortcut.
 
 ### Player Behavior
-- Player will now have more attention towards formation of words in the unconvenctional direction as well.
-- Not only this is advantageous, but a player can lose score if they don't pay attention toward the words.
+- Player will now more often try to split the dice throw for maximum utility.
 
 ### Duration of game
-- The duration of game and number of words to complete game/pieces reduces as the words are even considered in unconvenctional direction.
+- The number of steps to finish the game increased with the use of this rule as more capture could be done by _Split the Move_ rule.
+- If there are no capture throughtout the game, the average number of step would reduce.
 
 ### Game Output
-- The game output remains unaffected, however average scores of individual increases due to interpretation of words even in unconvenctional direction.
+- Game output may alter as capturing of opponent's pieces is highly possible.
 
 ### Mathematical Solutions
-- [Maven](https://en.wikipedia.org/wiki/Maven_(Scrabble)) is and Artificial Intelligent Scrabble player which is dependent on [Suffix Automation](https://en.wikipedia.org/wiki/Suffix_automaton) Algorithm. It created graph with node as letters and unidirectional edges as the link between the letters in words and search for the suffix which could extend the current word with letters in the bag for meaningful word.
-- The only change in the algorithm is that the there would be multiple graph(one for each unconvenctional direction) and the processing for each graph would remain same.
-- The computations and space complexity of the algorithm would increase, but it would not be that significantly high.
-
+- According to [this](https://pdfs.semanticscholar.org/2b63/277508b6d2909ff75c18c5c098ce64135dca.pdf) research paper make AI Bot with optimal search techniques. The most important aspect of AI Bot in Ludo is that it should be [fun to play with](https://stackoverflow.com/questions/5163806/how-to-make-an-efficient-ludo-game-playing-ai-algorithm).
+- With the above change in rule, the algorithms have to search more broadly across the new possible combinations of the split between two pieces. The computation complexity would increase with this change of rule.
+- The breadth of the search tree would increase, but the depth of the search tree would decrease as what could be achieved by two dice throw in original game could probably be achieved in one dice throw with new rule.
