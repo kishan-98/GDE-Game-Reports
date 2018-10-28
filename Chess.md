@@ -31,12 +31,11 @@ The new rule is **operational** rule.
 
 ### Duration of game
 - The duration of game remained same but the number of steps were reduced.
-- The reason for the reduction in number of steps is that capture and check(probably checkmate) is easier, while the duration of the game remains same because there are multiple capture scenerious possible with a single layer of blockage of pieces.
+- The reason for the reduction in number of steps is that capture and check(probably checkmate) is easier, while the duration of the game remains same because there are multiple capture scenerious possible with a single layer of blockage of pieces, thus it takes more time to evaluate position after one move.
 
 ### Game Output
 - The game output remains unaffected, however multiple new moves are possible.
 
 ### Mathematical Solutions
-- As presented in the research article "THE SHORTEST GAME OF CHINESE CHECKERS AND RELATED PROBLEMS
-" by George I. Bell, the shortest game remains same.
-- However the average length is considerably reduced and the game is more asymmetric than the original game.
+- Chess is only [partially solved](https://en.wikipedia.org/wiki/Solving_chess), but is [solvable game](https://chess.stackexchange.com/questions/13522/is-chess-a-solved-game).
+- The number of moves with the given rule change increases significantly thus it becomes expensive computationally. The states of the game are increased because of introdution of the new rule.
