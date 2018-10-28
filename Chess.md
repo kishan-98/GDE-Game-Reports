@@ -12,8 +12,6 @@ We introduced a new rule for called _Inverted Jump_.
 - Except pawns and king, every other piece can jump over at most one other piece, either of player or their opponent.
 - Other rules of game apply as it is.
 
-![Parallel Destiny](parallel_destiny.png)
-
 ### Type of rule change:
 
 The new rule is **operational** rule.

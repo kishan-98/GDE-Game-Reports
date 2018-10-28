@@ -13,6 +13,8 @@ We introduced a new rule for called _Crossed Destiny_.
 - The destination of each player is not the opponent's cell but the opposite cells of their adjacent side of board(either both left or both right).
 - Other rules of game apply as it is.
 
+![Crossed Destiny](crossed_destiny.png)
+
 ### Type of rule change:
 
 The new rule is **foundational** rule.
