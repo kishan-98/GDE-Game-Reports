@@ -21,8 +21,12 @@
 
 ### Changes in Game
 - Game Play
+    -
 - Player Behavior
+    -
 - Duration of game
+    -
 - Game Output
+    - 
 
 ### Mathematical Solutions
